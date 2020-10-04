@@ -108,8 +108,7 @@ class Upload {
 		if (
 			Helper::storage()->put(
 				Helper::folder($this->folder . $this->name),
-				$this->file,
-				Helper::visibility($this->private)
+				$this->file
 			)
 		) {
 			return Model::create([
